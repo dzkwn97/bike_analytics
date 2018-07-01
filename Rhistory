@@ -1,0 +1,20 @@
+install.packages("caret")
+library("caret")
+filename<-"BIKETRIP.csv"
+datasets<-read.csv(filename,header = FALSE)
+View(datasets)
+colnames(datasets) = datasets[1, ]
+rm(datasets)
+colnames(datasets)<-c("Duration","Start date","End date","Start station number","Start station","End station number","End station","Bike number","Member type")
+dataset<-read.csv(BIKETRIP.csv)
+dataset<-read.csv(filename,header=FALSE)
+View(dataset)
+colnames(dataset)<-c("Duration","Start date","End date","Start station number","Start station","End station number","End station","Bike number","Member type")
+dataset = dataset[-1, ]
+rm(dataset)
+dataset<-read.csv(filename,header=FALSE)
+colnames(dataset)<-c("Duration","Start date","End date","Start station number","Start station","End station number","End station","Bike number","Member type")
+is.numeric(Duration)
+is.numeric(dataset)
+is.numeric(duration)
+is.numeric()
